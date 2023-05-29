@@ -144,7 +144,14 @@ export const customerSidebar = [
     title: "Set Up",
     // path: "/production/reports",
     icon: <MdReport />,
-    icon:<GoReport/>
+    icon:<GoReport/>,
+    subNav:[
+      {
+        title: "Server Info",
+        path: "/machine/serverInfo",
+        icon:<GoReport/>
+      }
+    ]
   },
   // {
   //   title: "Fabrication",
