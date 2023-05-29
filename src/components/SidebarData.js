@@ -39,6 +39,7 @@ export const customerSidebar = [
       {
         title: "Machine Operator",
         // path: "/production/setup/server",
+        path:"/machine/machineOperator",
         icon: <BsServer />,
       },
       {
