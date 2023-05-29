@@ -50,6 +50,7 @@ export const customerSidebar = [
       {
         title: "Print Lable",
         // path: "/production/setup/process",
+        path:"/machine/printLable",
         icon: <VscServerProcess />,
       },
     ],

@@ -6,6 +6,7 @@ import Login from "./pages/Auth/Login";
 import Home from "./pages/Home";
 import MachineOperator from "./pages/ShiftOperation/MachineOperator";
 import ServerInfo from "./pages/ServerInfo/ServerInfo";
+import PrintLable from "./pages/ShiftOperation/PrintLable/PrintLable";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
           <Route path="/machine/machineOperator" element={<MachineOperator/>}/>
           <Route path="/machine/serverInfo" element={<ServerInfo/>}/>
+          <Route path="/machine/printLable" element={<PrintLable/>}/>
 
           </Route>
         </Route>
