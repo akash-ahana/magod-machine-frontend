@@ -1,3 +1,24 @@
+
+import React, { useState } from "react";
+import { Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import MainModal from "./OpenShiftLog/MainModal";
+
+export default function MachineOperator() {
+  const[openModal, setOpenModal]=useState(false);
+
+  const handleOpen=()=>{
+    console.log("11");
+setOpenModal(true);
+console.log(openModal);
+  }
+  return (
+    <div>
+      {
+        openModal &&
+        <MainModal openModal={openModal} setOpenModal={setOpenModal} />
+      }
+
 import axios from "axios";
 import React from "react";
 import { Table } from "react-bootstrap";
@@ -81,6 +102,7 @@ console.log(Shift)
     <div>
       <OpenShiftModal openmodal={openmodal}
       setOpenmodal={setOpenmodal}/>
+
       <div className="col-md-12">
         <div className="row">
           <h4 className="title">Shift Selection Form</h4>
@@ -90,14 +112,22 @@ console.log(Shift)
         <div className="col-md-3 col-sm-12 mt-2">
           <h6 className="mt-2" style={{whiteSpace:"nowrap"}}><b>Operator Current Shift Selector Form</b></h6>
         </div>
+
+        <div className="col-md-3 col-sm-12">
+     <Link to="/machine/machineOperator/OpenShiftLog">    <button
+            className="button-style  group-button"
+            style={{ width: "120px", marginTop: "10px" }}
+            onClick={handleOpen}
+
         <div className="col-md-3 ms-2 col-sm-12">
           <button
             className="button-style  group-button"
             style={{ width: "150px", marginTop: "10px" }}
             onClick={openShiftLogModal}
+
           >
             Open Shift Log
-          </button>
+          </button> </Link> 
         </div>
       </div>
 

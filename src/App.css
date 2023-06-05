@@ -400,6 +400,10 @@ td {
 
 .tab_font {
   font-weight: 600;
+  /* width:auto !important;
+  white-space:nowrap;
+  overflow: hidden;
+  text-decoration: ellipsis; */
 }
 
 .tableHeaderBGColor {
