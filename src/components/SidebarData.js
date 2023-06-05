@@ -50,6 +50,7 @@ export const customerSidebar = [
       {
         title: "Print Lable",
         // path: "/production/setup/process",
+        path:"/machine/printLable",
         icon: <VscServerProcess />,
       },
     ],
@@ -144,7 +145,14 @@ export const customerSidebar = [
     title: "Set Up",
     // path: "/production/reports",
     icon: <MdReport />,
-    icon:<GoReport/>
+    icon:<GoReport/>,
+    subNav:[
+      {
+        title: "Server Info",
+        path: "/machine/serverInfo",
+        icon:<GoReport/>
+      }
+    ]
   },
   // {
   //   title: "Fabrication",
