@@ -10,35 +10,34 @@ export default function ServerInfo() {
         </div>
       </div>
 
-      <div className="col-md-3 col-sm-12 mt-2">
-          <h5 className="mt-2">Magod MIS Server</h5>
+      <div className="col-md-3">
+          <h5 className="mt-2" style={{marginLeft:'10px'}}>Magod MIS Server</h5>
       </div>
       <div className="row col-md-12 bg-light">
 
         <div className="col-md-6 mb-3">
 
-            <div style={{ marginTop: "10px" }} className="col-md-3 col-sm-12">
+            <div className="">
                 <h6 className="mt-2">Data Server</h6>
             </div>
 
-           <div className="col-md-5">
+           <div className="">
                 <label className="form-label">Server Name</label>
                 <input className="in-field" style={{marginTop:'-7px'}}/>
             </div>
 
-            <div className="col-md-5">
+            <div className="">
                 <label className="form-label">Driver</label>
                 <input className="in-field" style={{marginTop:'-7px'}}/>
             </div>
 
-            <div className="col-md-5">
+            <div className="">
                 <label className="form-label">Option</label>
                 <input className="in-field" style={{marginTop:'-7px'}}/>
             </div>
 
-            <div className="row mt-1">
-                <button className="button-style mt-2 group-button"
-                    style={{ width: "150px"}}>
+            <div className="mt-1">
+                <button className="button-style mt-2 group-button">
                     Reset
                 </button>
             </div>
@@ -46,18 +45,18 @@ export default function ServerInfo() {
 
         <div className="col-md-6">
 
-            <div style={{ marginTop: "10px" }} className="col-md-3 col-sm-12">
+            <div className="">
                 <h6 className="mt-2">Mail Server</h6>
             </div>
 
-            <div className="col-md-5" style={{marginBottom:'120px'}}>
+            <div className="" style={{marginBottom:'120px'}}>
                 <label className="form-label">Server Name</label>
                 <input className="in-field" style={{marginTop:'-7px'}}/>
             </div>
 
-            <div className="mt-1">
+            <div className="">
                 <button className="button-style mt-2 group-button"
-                    style={{ width: "150px", marginTop:'200px'}}>
+                    style={{ width: "150px"}}>
                         Save
                 </button>
             </div>

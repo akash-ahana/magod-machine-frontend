@@ -3,7 +3,7 @@ import React from 'react'
 export default function HeadForm() {
   return (
     <div>
-         <div className="col-md-12">
+        <div className="col-md-12">
         <div className="">
           <h4 className="title">Program Parts List</h4>
         </div>
@@ -22,14 +22,14 @@ export default function HeadForm() {
             </button>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-md-3" style={{marginLeft:'-116px'}}>
             <button className="button-style mt-4 group-button"
                 style={{ width: "150px"}}>
                 Print All
             </button>
         </div>
 
-        <div className='col-md-3'>
+        <div className='col-md-3' style={{marginLeft:'-116px'}}>
               <button className="button-style mt-4 group-button"
                 style={{ width: "150px"}}>
                 Print Selected
