@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
-import ErrorReportForm from './ErrorReportForm';
+
+
+import ErrorrForm from './ErrorrForm';
 
 export default function OpenShiftLogForm() {
   const [errorForm, setErrorForm] = useState(false);
   const [isInputVisible, setInputVisible] = useState(false);
-  var count=0;
+  
   
   const toggleInput = () => {
-count=count+1;
-
-  if(count===1){
-    setInputVisible(true);
-  }
-   else{
-    setInputVisible(false);
-   }
+   
+setInputVisible(!isInputVisible)
 
   };
-
+ 
   const handleOpen = () => {
     setErrorForm(true)
   }
@@ -36,7 +32,7 @@ count=count+1;
           </div>
         </div>
         <div className="row">
-          <div style={{ marginTop: "10px" }} className="col-md-6 col-sm-12">
+          <div style={{ marginTop: "10px" }} className="col-md-7 col-sm-12">
             <h5 className="mt-2">Magod Laser Machining Pvt Ltd</h5>
             <h6 className="mt-2">Machine Operator information and Working Form</h6>
           </div>
@@ -46,20 +42,16 @@ count=count+1;
               style={{ width: "90px", marginTop: "10px", fontSize: '14px' }}
               onClick={toggleInput}>
               Stoppage
-              {isInputVisible ?
+              {isInputVisible ?  
                 <div className='col-md-12' style={{ marginLeft: '-160px', marginTop: '-20px',width:'140px' }}>
 
                   <div>
-
-
                     {/* <label className="form-label">Shift</label> */}
                     <select className="ip-select">
                       <option value="option 1"> First</option>
                       <option value="option 1">Second</option>
                       <option value="option 1">Third</option>
                     </select>
-
-
 
                     <select className="ip-select">
                       <option value="option 1"> First</option>
@@ -69,7 +61,7 @@ count=count+1;
 
                   </div>
 
-                </div> : ''}
+                </div>: '' }
 
 
             </button>
@@ -142,7 +134,8 @@ count=count+1;
 
 
       </div>
-      <ErrorReportForm errorForm={errorForm} setErrorForm={setErrorForm} />
+      
+      <ErrorrForm  setErrorForm={setErrorForm} errorForm={errorForm}/>
 
     </>
   );

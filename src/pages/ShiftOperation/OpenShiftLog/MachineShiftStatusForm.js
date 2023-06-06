@@ -2,21 +2,15 @@ import React, { useEffect, useState } from 'react';
 
 export default function MachineShiftStatusForm() {
   
-var count=0;
+
   
   const [isInputVisible, setInputVisible] = useState(false);
   
 
   const toggleInput = () => {
-  count=count+1;
+  
+    setInputVisible(!isInputVisible);
 
-if(count === 1){
-    setInputVisible(true);
-   
-}
-else {
-  setInputVisible(false);
-}
   };
   
 
